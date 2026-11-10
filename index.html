@@ -95,6 +95,7 @@
             <li><strong>특수 태그 표시 (기본 OFF):</strong> 본문 내 숨겨진 조판용 띄어쓰기 및 메타 태그(<code class="bg-cyan-100 text-cyan-800 px-1 rounded">⟦고정폭⟧</code>, <code class="bg-teal-100 text-teal-800 px-1 rounded">⟦표⟧</code>, <code class="bg-indigo-100 text-indigo-800 px-1 rounded">⟦밑줄⟧</code> 등)의 표시 여부를 켜고 끕니다. OFF 상태에서도 검수 엔진은 이 태그들을 투명하게 인식하여 완벽히 동작합니다.</li>
             <li><strong>지우기:</strong> 입력된 원문, 해설문 및 검수 결과 리포트를 모두 초기화합니다.</li>
             <li><strong>검수 실행:</strong> 입력된 텍스트를 분석하여 오류와 조판 규격 위반을 리포트로 생성합니다.</li>
+            <li><strong>문단 보기 팝업:</strong> 각 항목의 <code class="bg-slate-100 border px-1 rounded text-xs font-semibold">📄 문단 보기</code> 버튼으로 해당 문단 전문을 확인 및 복사할 수 있습니다.</li>
             <li><strong>표 영역 자동 인식:</strong> <code class="bg-slate-100 px-1 rounded">.hwpx</code> 파일 내의 표는 <code class="bg-teal-100 text-teal-800 px-1 rounded">⟦표⟧ ... ⟦/표⟧</code>로 자동 래핑되며, 표 내부의 선택지 번호는 공백 검수에서 자동 제외됩니다.</li>
           </ul>
         </div>
@@ -121,6 +122,17 @@
             <li><strong>문장 부호 짝 누락:</strong> 따옴표 및 괄호 쌍 불일치</li>
             <li><strong>종결 부호 뒤 이중 공백:</strong> 마침표(.), 물음표(?), 느낌표(!) 뒤와 다음 단어 사이에 2회 이상 연속 공백이 들어간 경우 적발</li>
             <li><strong>직선 따옴표 위반:</strong> 둥근 따옴표 대신 ' 또는 " 사용</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-bold text-amber-700 mb-2 border-b pb-1">4. 작업 편의를 위한 실무 팁</h3>
+          <ul class="list-disc list-inside space-y-1.5 ml-2 text-slate-600">
+            <li><strong>검수 결과 활용 안내:</strong> 본 검수기로 모든 오류를 탐지할 수 있는 것은 아니므로, 참고 수준으로만 사용해 주세요. 최종적인 내용과 조판 확인은 육안 검수를 병행해 주시기 바랍니다.</li>
+            <li><strong>개념어·강조용 따옴표의 유사도 오탐:</strong> 검수 식의 특성상 인용구가 아닌 단순 강조나 개념어 따옴표임에도 원문에 비슷한 부분이 있어 원문으로 잡히는 것은 어쩔 수 없습니다. '문단 보기'로 확인해 보시고 내용상 문제가 없다면 적당히 넘어가셔도 됩니다.</li>
+            <li><strong>한글 문서 투명 문항 번호 오류:</strong> 한글 파일 화면에는 보이지 않는 '1.', '2.' 같은 문항 번호가 나와서 오류로 나타났다면, 해당 문단의 스타일이 번호가 포함된 '문제'나 '개요' 등으로 설정된 경우입니다. 한글에서 해당 문단 스타일을 '바탕글' 등으로 바꿔 주세요.</li>
+            <li><strong>가상 태그 역복사 주의:</strong> 본 검수기에 표시되는 <code class="bg-slate-100 px-1 rounded">⟦고정폭⟧</code>, <code class="bg-slate-100 px-1 rounded">⟦밑줄⟧</code>, <code class="bg-slate-100 px-1 rounded">⟦표⟧</code> 등은 검수 편의를 위한 가상 태그입니다. 수정본을 한글 파일에 옮겨 적으실 때 태그 문자를 그대로 붙여넣지 마시고, 한글 단축키(고정폭 빈칸: <kbd class="bg-slate-100 border px-1 rounded">Alt+Space</kbd>)나 본래 서식을 사용해 주세요.</li>
+            <li><strong>실시간 즉시 재검수:</strong> 파일을 다시 올리지 않더라도 텍스트 상자에서 오타나 띄어쓰기를 직접 수정한 뒤 상단의 <strong>[검수 실행]</strong>을 다시 누르면 수정 사항이 즉각 반영되어 리포트가 갱신됩니다.</li>
           </ul>
         </div>
       </div>
